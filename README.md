@@ -78,7 +78,7 @@ Requires **config.json** file in the ROOT
 3. node app.bundle.js
 4. Make this script run (CRON JOB) every 1 hour or so
 5. As default APP logs info messages to **./info.log** and error messages to **./error.log**
-6. Files are stored do ./downloads folder (created if doesn`t exist)
+6. Files are stored to ./downloads folder (created if doesn`t exist)
 
 ## NPM packages used
 
