@@ -1,0 +1,21 @@
+{
+  "url": {
+    "link": "https://www.klicek-skolka.cz/index.php?p=klicek-skolni-jidelna",
+    "anchorSelector": "#content .obsah-stranka a",
+    "anchorText": "jídelníček"
+  },
+  "mailer": {
+    "host": "smtp.seznam.cz",
+    "port": "465",
+    "secure": true,
+    "auth": {
+      "user": "example@domain.com",
+      "pass": "MySuperSecretPassword"
+    },
+    "mailOptions": {
+      "to": "recipient1@domain.com, recipient2@domain.com",
+      "subject": "Subject for email"
+    },
+    "admin": "admin@domain.com"
+  }
+}
