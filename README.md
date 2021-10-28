@@ -74,11 +74,12 @@ Requires **config.json** file in the ROOT
 ## Deploy & Run
 
 1. Copy/Deploy app.bunde.js to your hosting with running Node env
-2. Adjust config.json based on your needs and copy it to the same location as app.bundle.js
-3. node app.bundle.js
-4. Make this script run (CRON JOB) every 1 hour or so
-5. As default APP logs info messages to **./info.log** and error messages to **./error.log**
-6. Files are stored to ./downloads folder (created if doesn`t exist)
+2. npm install --production
+3. Adjust config.json based on your needs and copy it to the same location as app.bundle.js
+4. node app.bundle.js
+5. Make this script run (CRON JOB) every 1 hour or so
+6. As default APP logs info messages to **./info.log** and error messages to **./error.log**
+7. Files are stored to ./downloads folder (created if doesn`t exist)
 
 ## NPM packages used
 
