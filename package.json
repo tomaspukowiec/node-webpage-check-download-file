@@ -6,6 +6,8 @@
   "scripts": {
     "start": "npm run compile && cd dist && node app.js",
     "compile": "tsc",
+    "lint": "eslint . --ext .ts",
+    "prettier-format": "prettier --config .prettierrc.json --write ./src",
     "build": "npm run compile && webpack --mode=production",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
