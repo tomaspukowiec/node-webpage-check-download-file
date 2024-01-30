@@ -23,10 +23,14 @@ const run = async () => {
     const $ = cheerio.load(html);
     const anchorElements = $(url.anchorSelector);
     let urlFile = '';
-    anchorElements.each((index: any, el: any) => {
+    anchorElements.each((_index: any, el: any) => {
       const anchorText = $(el).text();
       const anchorHref = $(el).attr('href');
-      if (anchorText && anchorText.includes(url.anchorText) && anchorHref) {
+      if (
+        anchorText &&
+        anchorText.toLowerCase().includes(url.anchorText.toLowerCase()) &&
+        anchorHref
+      ) {
         urlFile = (anchorHref.startsWith('/') ? urlDomain : '') + anchorHref;
       }
     });
